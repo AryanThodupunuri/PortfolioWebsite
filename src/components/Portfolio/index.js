@@ -16,7 +16,7 @@ const portfolioData = {
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
-,
+    },
     {
       cover: "/portfolio/placeholder.png",
       title: "SlackLite – Real-time Messaging System",
