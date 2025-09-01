@@ -17,6 +17,13 @@ const portfolioData = {
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
     },
+,
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "Travel Packing Checklist",
+      description: "HTML, CSS, JavaScript — generate packing list by trip type & duration",
+      url: "https://github.com/AryanThodupunuri/travel-packing-checklist.github.io"
+    }
     {
       cover: "/portfolio/placeholder.png",
       title: "SlackLite – Real-time Messaging System",
