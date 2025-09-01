@@ -2,6 +2,7 @@ import Loader from "react-loaders"
 import "./index.scss"
 import AnimatedLetters from "../AnimatedLetters" 
 import { useEffect, useRef, useState, useMemo } from "react"
+// emailjs is optional; will be used when keys are provided
 import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
