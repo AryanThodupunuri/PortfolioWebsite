@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
 import AnimatedLetters from '../AnimatedLetters';
-import '../InitialsAvatar';
 import InitialsAvatar from '../InitialsAvatar';
 import './index.scss';
 
