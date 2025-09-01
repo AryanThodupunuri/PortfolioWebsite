@@ -1,0 +1,41 @@
+.skill-list {
+  margin: 16px 0 8px;
+}
+
+.skill-list h2 {
+  color: #ffd700;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin: 8px 0 12px;
+}
+
+.skill-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-item {
+  margin-bottom: 12px;
+}
+
+.skill-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.skill-name {
+  color: #fff;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.skill-years {
+  color: #ade8f4;
+  font-size: 12px;
+  font-family: sans-serif;
+}
