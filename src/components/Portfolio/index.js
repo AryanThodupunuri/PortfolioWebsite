@@ -16,6 +16,37 @@ const portfolioData = {
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
+,
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "SlackLite – Real-time Messaging System",
+      description: "FastAPI, React, MongoDB, WebSockets, JWT, uploads, reactions",
+      url: "https://github.com/AryanThodupunuri/SlackLite"
+    },
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "Fake News Detection",
+      description: "NLP embeddings + classifiers for fake vs. real news",
+      url: "https://github.com/AryanThodupunuri/fake-news-detection"
+    },
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "Taiwanese Bankruptcy Prediction",
+      description: "LogReg, RF, XGBoost, SVM with PCA/Lasso, class balancing",
+      url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
+    },
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "Stock Price Prediction – KNN",
+      description: "Quandl data, classification + regression forecasting",
+      url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
+    },
+    {
+      cover: "/portfolio/placeholder.png",
+      title: "Traffic Sign CNN",
+      description: "LeNet-5 on GTSRB: classify 43 German traffic signs",
+      url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
+    }
     }
   ]
 };
