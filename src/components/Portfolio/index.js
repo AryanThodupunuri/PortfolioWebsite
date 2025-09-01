@@ -47,7 +47,6 @@ const portfolioData = {
       description: "LeNet-5 on GTSRB: classify 43 German traffic signs",
       url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
     }
-    }
   ]
 };
 
