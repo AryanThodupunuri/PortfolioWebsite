@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'react';
 import Loader from 'react-loaders';
 import { Link } from 'react-router-dom';
-import LogoE from '../../assets/images/E.png';
 import AnimatedLetters from '../AnimatedLetters';
+import '../InitialsAvatar';
+import InitialsAvatar from '../InitialsAvatar';
 import './index.scss';
-import Logo from './Logo';
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = "rik, ".split("");
+    const nameArray = "Aryan Thodupunuri".split("");
     const jobArray = "software engineer.".split("");
 
     useEffect(() => {
@@ -30,16 +30,21 @@ const Home = () => {
                 <span className = {`${letterClass} _9`}>i</span>
                 <br /> 
                 <span className = {`${letterClass} _10`}>I</span>
-                <span className = {`${letterClass} _11`}>'m</span>
-                <img src={LogoE} alt = "developer" />
+                <span className = {`${letterClass} _11`}>\'m</span>
+                &nbsp;
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={12} />
                 <br /> 
                 <AnimatedLetters letterClass={letterClass} strArray={jobArray} idx={15} /> 
                 </h1>
-                <h2>Computer Engineering & AI, 2026 at McGill University</h2>
-                <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                <h2>Computer Science @ University of Virginia (’27)</h2>
+                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                  <Link to="/contact" className="flat-button">CONTACT ME</Link>
+                  <a className="flat-button" href="https://customer-assets.emergentagent.com/job_be1c6846-0316-4de7-bd4e-3d399cc0efa2/artifacts/mf41smqz_Thodupunuri%20Resume%20VAug2025.pdf" target="_blank" rel="noreferrer">DOWNLOAD RESUME</a>
+                </div>
             </div>
-            <Logo className="Home"/>
+            <div className="avatar-wrap">
+              <InitialsAvatar initials="AT" size="lg" />
+            </div>
         </div>
         <Loader type="pacman" />
       </>
