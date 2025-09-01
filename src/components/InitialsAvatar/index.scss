@@ -1,0 +1,30 @@
+.initials-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #023e8a, #00b4d8);
+  color: #ffd700;
+  font-family: 'Coolvetica';
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 0 20px 0px lightyellow;
+}
+
+.initials-avatar.lg {
+  width: 280px;
+  height: 280px;
+  font-size: 96px;
+}
+
+.initials-avatar.md {
+  width: 120px;
+  height: 120px;
+  font-size: 42px;
+}
+
+.initials-avatar.sm {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}

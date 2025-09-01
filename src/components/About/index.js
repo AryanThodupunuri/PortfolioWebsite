@@ -8,7 +8,6 @@ import Loader from "react-loaders";
 import LanguageList from "./LanguageList";
 
 const About = () => {
-    
     const [letterClass, setLetterClass] = useState('text-animate');
 
     useEffect(() => {
@@ -29,12 +28,14 @@ const About = () => {
                         <AnimatedLetters letterClass={letterClass}  strArray = {"About me".split("")} idx={15}/>
                     </h1>
                     <p>
-                    I am a very ambitious software developer with a unique background that has prepared me to be a team player who communicates effectively, faces problems analytically and has the technical skills to tackle any challenge. 
-                    <br/>
+                      I'm Aryan Thodupunuri — a software engineer focused on full‑stack and ML systems. I've built production apps across React, Python/Flask, and Java/Spring Boot, deployed on AWS with Docker, and implemented data/NLP pipelines. I enjoy shipping reliable user experiences, optimizing performance, and collaborating in fast, iterative teams.
+                    </p>
+                    <p>
+                      Recently, I interned as a Software Engineering Intern at Booz Allen Hamilton (supplier intelligence tool with React, Flask, AWS) and contributed at Red Light Management (ETL & API performance), UVA Link Lab (CNN‑RNN flood forecasting in TensorFlow), and Commonwealth Trivia Ventures (React Native progression, PostgreSQL/Django APIs).
+                    </p>
                     <LanguageList />
                     <Link to="/about/tech" className="flat-button">FRAMEWORKS/TECHNOLOGIES</Link>
                     <Link to="/about/dev" className="flat-button">DEVELOPMENT TOOLS</Link>
-                    </p>
                 </div>
                 <div className = "stage-cube-cont">
                     <div className = "cubespinner"> 

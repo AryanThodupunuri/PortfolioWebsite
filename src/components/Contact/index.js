@@ -1,7 +1,7 @@
 import Loader from "react-loaders"
 import "./index.scss"
 import AnimatedLetters from "../AnimatedLetters" 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState, useMemo } from "react"
 import emailjs from "@emailjs/browser"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
@@ -10,6 +10,14 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const refForm = useRef()
+
+    const emailJsConfigured = useMemo(() => {
+      return Boolean(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID &&
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID &&
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
+    }, []);
 
     useEffect(() => {
         const timerId = setTimeout(() => {
@@ -24,12 +32,17 @@ const Contact = () => {
       const sendEmail = (e) => {
         e.preventDefault() 
 
+        if (!emailJsConfigured) {
+          alert("Email not configured yet. Please reach me via LinkedIn or email directly.");
+          return;
+        }
+
         emailjs
             .sendForm(
                 process.env.REACT_APP_EMAILJS_SERVICE_ID,
                 process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
                 refForm.current,
-                process.env.REACT_APP_EMAILJS_USER_ID
+                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
             )
             .then(
                 () => {
@@ -47,23 +60,29 @@ const Contact = () => {
             <div className = "container contact-page">
                 <div className = "text-zone">
                     <table>
+                        <tbody>
                         <tr>
                             <td className="left-side">
                                 <h1>
                                     <AnimatedLetters letterClass={letterClass} strArray = {"Contact me".split("")} idx = {15} />
                                 </h1>
+                                {!emailJsConfigured && (
+                                  <div className="notice">
+                                    Email not configured. Please contact me via LinkedIn or email directly.
+                                  </div>
+                                )}
                                 <p>
                                     <br/>
                                     Thank you for your interest in getting in touch! 
                                     <br/>
-                                    <br/>I value open communication and welcome any inquiries, feedback, or collaboration opportunities. Please don't hesitate to get in touch with me by filling out the contact form.
+                                    <br/>Please feel free to reach out using the form or the links below.
                                     <br/>
                                     <br/>
-                                    <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/erik-cupsa/">
-                                        <FontAwesomeIcon icon={faLinkedin}  class = "icon" color = "#4d4d4e" />
+                                    <a target = "_blank" rel = "noreferrer" href = "https://www.linkedin.com/in/aryan-thodupunuri/">
+                                        <FontAwesomeIcon icon={faLinkedin}  className = "icon" color = "#4d4d4e" />
                                     </a>
-                                    <a target = "_blank" rel = "noreferrer" href = "mailto:ErikCupsa@gmail.com">
-                                        <FontAwesomeIcon icon={faEnvelope} class = "icon" color = "#4d4d4e" />
+                                    <a target = "_blank" rel = "noreferrer" href = "mailto:aryan20544@gmail.com">
+                                        <FontAwesomeIcon icon={faEnvelope} className = "icon" color = "#4d4d4e" />
                                     </a>
                                 </p>
                             </td>
@@ -91,6 +110,7 @@ const Contact = () => {
                                 </div>
                             </td>
                         </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>

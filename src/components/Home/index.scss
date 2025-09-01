@@ -33,15 +33,6 @@
             animation: fadeIn 1s 1.7s backwards; 
             opacity: 0.6; 
         }
-        img { 
-            width: 80px; 
-            margin-left: 20px; 
-            margin-right: 3px;
-            opacity: 0; 
-            height: auto; 
-            animation: rotateIn 1s linear both; 
-            animation-delay: 1.4s; 
-        }
     }
 
     h2 { 
@@ -72,12 +63,19 @@
             color: #333;
         }
     }
+
+    .avatar-wrap {
+        position: absolute;
+        right: 12%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 @media screen and (max-width: 1200px){
     .home-page{
-        .logo-container {
-            width: 400px;
+        .avatar-wrap {
+            right: 5%;
         }
     }
 }
@@ -99,7 +97,7 @@
             text-align: left;
         }
 
-        .logo-container {
+        .avatar-wrap {
             position: relative; 
             width: 250px;
             height: auto; 
@@ -108,21 +106,12 @@
             box-sizing: border-box; 
             margin: auto; 
             left: 0; 
-
-            svg{
-                position: absolute; 
-                top: auto; 
-                right: auto; 
-                bottom: auto; 
-                left: 0;
-                margin: auto;
-            }
         }
 
         .flat-button{
             float: none;
-            display: block;
-            width: 125px;
+            display: inline-block;
+            width: auto;
         }
     }
 }
