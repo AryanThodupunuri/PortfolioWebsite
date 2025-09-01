@@ -29,8 +29,6 @@ const portfolioData = {
       description: "Live demo hosted on GitHub Pages",
       url: "https://aryanthodupunuri.github.io/travel-packing-checklist.github.io/"
     },
-
-    }
     {
       cover: "/portfolio/placeholder.png",
       title: "SlackLite – Real-time Messaging System",
