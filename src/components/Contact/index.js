@@ -88,8 +88,8 @@ const Contact = () => {
                                 </p>
                             </td>
                             <td className="right-side">
-                                <div className="contact-form" onSubmit={sendEmail}>
-                                    <form ref={refForm}>
+                                <div className="contact-form">
+                                    <form ref={refForm} onSubmit={sendEmail}>
                                         <ul>
                                             <li className = "half">
                                                 <input type="text" name="name" placeholder="Name" required />
