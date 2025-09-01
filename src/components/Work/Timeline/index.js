@@ -4,31 +4,41 @@ import './index.scss';
 const Timeline = () => {
   const [events, setEvents] = useState([
     {
-      date: 'May-September 2024',
-      title: 'TRC Consutling, Inc.',
+      date: 'May 2025 – Aug 2025',
+      title: 'Software Engineering Intern — Booz Allen Hamilton (McLean, VA)',
       description: [
-        'Engineered Large Language Models (LLMs), including <b>BERT</b> and <b>Attention Models</b>, to analyze <b>software engineering requirements</b> and generate accurate dependency lists, improving project planning efficiency by <b>37%</b>',
-        'Analyzed 1200+ <b>software requirements</b> monthly using <b>scikit-learn</b> (classification models), <b>spaCy</b>, and <b>NLTK</b> in <b>Python</b>, saving the company $20,000 annually by decreasing project lead times',
-        'Integrated <b>TF-IDF</b> vectorization to detect similarities in <b>software requirements</b>, focusing on preprocessing, model training, hyperparameter tuning and clustering to optimize <b>NLP</b> analysis processes',
+        'Built and deployed a full-stack supplier intelligence tool using <b>React</b>, <b>Flask</b>, and <b>AWS</b> (Data Lake, Lambda, EC2), enabling analysts to filter 10K+ vendors in real time and replacing hours of manual spreadsheet review.',
+        'Architected a backend pipeline & REST API using <b>spaCy NLP</b> and custom rules to extract key fields from 1,200+ contract PDFs, converting them into structured data searchable by 50+ analysts.',
+        'Designed unit testing framework with mock contracts to automate parsing evaluation, improving accuracy to 90%+ and reducing QA time by 30% (Agile sprints in Jira/Confluence).',
       ],
       expanded: false,
     },
     {
-      date: 'May-September 2023',
-      title: 'TRC Consulting, Inc.',
+      date: 'Sept 2024 – May 2025',
+      title: 'Software Engineering Intern — Red Light Management (Charlottesville, VA)',
       description: [
-        'Designed <b>30+ AWS Lambda Functions in AWS</b>, strategically leveraging <b>Lambda layers</b> to increase processing speed by <b>35% </b>and re-usability by <b>52%</b>, resulting in cost savings of <b>$1,000</b> per large scale deployment',
-        'Implemented <b>15+</b> serverless workflows using <b>AWS Step Functions</b>, seamlessly integrating <b>REST APIs </b>and rigorously tested with <b>Postman</b>, resulting in a <b>65%</b> reduction in execution time and enhanced operational efficiency',
-        'Crafted a <b>Spring Boot</b> application with a <b>Drools</b> logic engine, containerized it using <b>Docker</b>, and seamlessly deployed it on <b>AWS</b> using <b>EC2</b>, strategically allocating cloud resources to ensure enhanced scalability and reliability',
+        'Automated <b>ETL</b> pipelines in <b>Python</b> and <b>SQL</b> to aggregate Spotify, Apple Music, and Ticketmaster datasets.',
+        'Optimized API performance and caching, reducing query latency by <b>35%</b> during peak fan traffic.',
+        'Containerized backend services with <b>Docker</b> on <b>AWS</b>, improving reliability and simplifying cloud deployment.',
       ],
       expanded: false,
     },
     {
-      date: 'May-September 2022',
-      title: 'Government Of Canada',
+      date: 'Apr 2024 – Aug 2024',
+      title: 'Machine Learning & Backend Engineering Intern — UVA Link Lab',
       description: [
-        'Programmed and deployed a <b>Python-based data migration pipeline</b> on <b>Azure</b>, achieving a <b>50%</b> reduction in transfer time for <b>100+ terabytes</b> of critical business data',
-        'Centralized a <b>SQL database infrastructure</b> on <b>Azure</b>, enhancing data accessibility and security for <b>50+</b> stakeholders, resulting in a <b>30%</b> improvement in query performance across the organization',
+        'Implemented the RNN layer of a CNN‑RNN flood forecasting model in <b>Python/TensorFlow</b>, achieving 95% faster runtime and 15% higher accuracy than physics-based models.',
+        'Containerized and deployed the model on <b>AWS EC2</b> with <b>Docker</b> and <b>Node.js</b>, exposing RESTful APIs that delivered real-time forecasts to 100+ users via Plotly Dash dashboards.',
+      ],
+      expanded: false,
+    },
+    {
+      date: 'Jun 2023 – Aug 2023',
+      title: 'Software Engineering Intern — Commonwealth Trivia Ventures (Ashburn, VA)',
+      description: [
+        'Redesigned user progression system in <b>React Native</b> with a flexible tiered rewards framework (5+ tiers, milestones, animations, notifications), increasing session length by 18% and retention by 12%.',
+        'Implemented and optimized <b>PostgreSQL</b> schemas, complex queries, and performance indexes for progression and leaderboard features, reducing API read latency by 25%.',
+        'Created 3 <b>Django</b> (<b>Python</b>) REST API endpoints backed by PostgreSQL to track 1K+ user achievements.',
       ],
       expanded: false,
     },
