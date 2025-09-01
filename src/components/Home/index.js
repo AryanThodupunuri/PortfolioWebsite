@@ -29,7 +29,7 @@ const Home = () => {
                 <span className = {`${letterClass} _9`}>i</span>
                 <br /> 
                 <span className = {`${letterClass} _10`}>I</span>
-                <span className = {`${letterClass} _11`}>\'m</span>
+                <span className = {`${letterClass} _11`}>'m</span>
                 &nbsp;
                 <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={12} />
                 <br /> 
