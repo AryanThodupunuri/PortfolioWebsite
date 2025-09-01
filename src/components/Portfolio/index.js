@@ -17,7 +17,6 @@ const portfolioData = {
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
     },
-,
     {
       cover: "/portfolio/placeholder.png",
       title: "Travel Packing Checklist",
