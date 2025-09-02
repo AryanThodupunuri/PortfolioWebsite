@@ -1,12 +1,13 @@
 .home-page{ 
     .text-zone { 
         position: absolute; 
-        left: 10%; 
+        left: 8%; 
         top: 50%; 
         transform: translateY(-50%); 
-        width: 40%; 
+        width: 38%; 
         max-height: 90%; 
-        padding-right: 300px; /* ensure hero title has space away from avatar */
+        padding-right: 200px; /* ensure hero title has space away from avatar */
+        z-index: 2;
     }
     h1{
         color: #fff; 
@@ -67,21 +68,22 @@
 
     .avatar-wrap {
         position: absolute;
-        left: 68%;
+        left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
+        z-index: 1;
     }
 }
 
 @media screen and (max-width: 1200px){
     .home-page{
         .avatar-wrap {
-            right: 5%;
             left: auto;
+            right: 5%;
             transform: translateY(-50%);
         }
         .text-zone{
-            padding-right: 200px;
+            padding-right: 120px;
         }
     }
 }

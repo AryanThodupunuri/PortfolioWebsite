@@ -27,8 +27,8 @@ const Timeline = () => {
       date: 'May 2024',
       title: 'Hack Week Participant — Palantir Technologies (Charlottesville, VA)',
       description: [
-        'Developed backend logic for a <b>Flask</b>-based dashboard that analyzed <b>50,000+</b> simulated emergency dispatch records to detect underserved neighborhoods and analyze factors contributing to delayed response times in high-density urban zones.',
-        'Integrated <b>Leaflet.js</b> with clustering algorithms to visualize incident hotspots on an interactive map, helping optimize station placement and improve emergency coverage; presented insights to Palantir engineers during the final demo.',
+        'Developed backend logic for a <b>Flask</b>-based dashboard that analyzed <b>50,000+</b> simulated emergency dispatch records to detect underserved neighborhoods and analyze factors contributing to delayed response times across high-density urban zones.',
+        'Integrated <b>Leaflet.js</b> with clustering algorithms to visualize incident hotspots on an interactive map, helping optimize station placement and improve emergency coverage; presented insights to Palantir engineers during final demo.',
       ],
       expanded: false,
     },
@@ -51,29 +51,41 @@ const Timeline = () => {
       ],
       expanded: false,
     },
+  ]);
+
+  const [leadershipEvents, setLeadershipEvents] = useState([
     {
-      date: 'June 2022 – August 2023',
-      title: 'Code Coach — The Coderschool Ashburn',
+      date: 'Mar 2025 – Present',
+      title: 'AI Strategy Lead – RLM Marketing Optimization (Business & AI Club)',
       description: [
-        'Tailor lessons according to students\' ability levels in 1-on-1 training to help them gain proficiency in various programming languages.',
-        'Work closely with students as they create various projects regarding the programming language they are working on (some projects are as simple as an animation, others are as complex as apps with functional UI).',
+        'Collaborated on a cross-functional team to design an <b>AI-powered</b> marketing insights tool, leading the development of campaign analytics and strategic recommendations that improved decision-making speed and team alignment across the market organization.',
+      ],
+      expanded: false,
+    },
+    {
+      date: 'Aug 2024 – Present',
+      title: 'VP of Academic Excellence',
+      description: [
+        'Launched an academic mentorship program pairing new members with upperclassmen, resulting in increased study session participation and contributing to a <b>+0.15</b> average GPA improvement across first-semester members.',
       ],
       expanded: false,
     },
   ]);
 
-
-
-  const handleItemClick = (index) => {
-    setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
+  const handleItemClick = (index, type = 'exp') => {
+    if (type === 'exp') {
+      setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
+    } else {
+      setLeadershipEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
+    }
   };
 
-  const renderItems = (items) => (
+  const renderItems = (items, type) => (
     items.map((event, index) => (
       <div
         className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
-        key={index}
-        onClick={() => handleItemClick(index)}
+        key={`${type}-${index}`}
+        onClick={() => handleItemClick(index, type)}
       >
         <div className="timeline-marker"></div>
         <div className="timeline-content">
@@ -99,7 +111,9 @@ const Timeline = () => {
 
   return (
     <div className="timeline-container">
-      {renderItems(events)}
+      {renderItems(events, 'exp')}
+      <h2 className="subsection">Leadership</h2>
+      {renderItems(leadershipEvents, 'lead')}
     </div>
   );
 };
