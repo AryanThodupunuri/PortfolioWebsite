@@ -51,6 +51,15 @@ const Timeline = () => {
       ],
       expanded: false,
     },
+    {
+      date: 'June 2022 – August 2023',
+      title: 'Code Coach — The Coderschool Ashburn',
+      description: [
+        'Tailor lessons according to students\' ability levels in 1-on-1 training to help them gain proficiency in various programming languages.',
+        'Work closely with students as they create various projects regarding the programming language they are working on (some projects are as simple as an animation, others are as complex as apps with functional UI).',
+      ],
+      expanded: false,
+    },
   ]);
 
   const [leadershipEvents, setLeadershipEvents] = useState([
