@@ -12,7 +12,7 @@ const portfolioData = {
       url: "#"
     },
     {
-      cover: "https://drive.google.com/uc?export=view&id=1gzviEMZzSS2lBbcZoDbKYSxfl6bbT3Lf",
+      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/nxugjr3g_Screenshot%202025-09-01%20at%208.04.19%E2%80%AFPM.png",
       title: "UVA Course Planner Platform",
       description: "React, Python, AWS S3",
       url: "#"
