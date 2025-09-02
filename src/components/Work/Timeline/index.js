@@ -64,12 +64,8 @@ const Timeline = () => {
 
 
 
-  const handleItemClick = (index, type = 'exp') => {
-    if (type === 'exp') {
-      setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
-    } else {
-      setLeadershipEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
-    }
+  const handleItemClick = (index) => {
+    setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
   };
 
   const renderItems = (items, type) => (
