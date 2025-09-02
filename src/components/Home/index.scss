@@ -6,9 +6,8 @@
         transform: translateY(-50%); 
         width: 40%; 
         max-height: 90%; 
+        padding-right: 300px; /* ensure hero title has space away from avatar */
     }
-    padding-right: 380px; /* ensure hero title has space away from avatar */
-
     h1{
         color: #fff; 
         font-size: 53px; 
@@ -68,9 +67,9 @@
 
     .avatar-wrap {
         position: absolute;
-        right: 6%;
-        top: 55%;
-        transform: translateY(-50%);
+        left: 68%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -78,15 +77,14 @@
     .home-page{
         .avatar-wrap {
             right: 5%;
+            left: auto;
+            transform: translateY(-50%);
+        }
+        .text-zone{
+            padding-right: 200px;
         }
     }
 }
-    .home-page{
-        .text-zone{
-            padding-right: 0;
-        }
-    }
-
 
 @media screen and (max-width: 1000px){
     
@@ -111,9 +109,10 @@
             height: auto; 
             top: 50px; 
             right: 0; 
+            left: 0; 
+            transform: none;
             box-sizing: border-box; 
             margin: auto; 
-            left: 0; 
         }
 
         .flat-button{

@@ -6,58 +6,58 @@ import AnimatedLetters from "../AnimatedLetters";
 const portfolioData = {
   portfolio: [
     {
-      cover: "/portfolio/placeholder.png",
-      title: "UVA Course Planner Platform",
-      description: "React, Python, AWS S3",
-      url: "#"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
+      cover: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeonde.co%2Fcloud-kitchen-delivery-software-solution.shtml&psig=AOvVaw3ziDvAh26Co8J-8NXUaB-V&ust=1756857776658000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCIi5gLHjuI8DFQAAAAAdAAAAABAL",
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
     },
     {
-      cover: "/portfolio/placeholder.png",
+      cover: "https://drive.google.com/file/d/1gzviEMZzSS2lBbcZoDbKYSxfl6bbT3Lf/view?usp=drive_link",
+      title: "UVA Course Planner Platform",
+      description: "React, Python, AWS S3",
+      url: "#"
+    },
+    {
+      cover: "https://drive.google.com/file/d/1no_n7tWG2JlfG835gL7QAW1LFqjoqQK0/view?usp=sharing",
+      title: "SlackLite – Real-time Messaging System",
+      description: "Modern messaging app with FastAPI, React, MongoDB, WebSockets, JWT, file uploads, reactions, editing",
+      url: "https://github.com/AryanThodupunuri/SlackLite"
+    },
+    {
+      cover: "https://drive.google.com/file/d/11ryUw0fEVpa2oG23xzHsnkh2FwQlK7aT/view?usp=sharing",
+      title: "Taiwanese Bankruptcy Prediction",
+      description: "Predicted bankruptcies using Logistic Regression, Random Forest, XGBoost, and SVM with PCA, Lasso, and class balancing",
+      url: "https://github.com/AryanThodupunur i/taiwan-bankruptcy-prediction"
+    },
+    {
+      cover: "https://drive.google.com/file/d/1ZoqgfPMXn3aDyx-iolCs8e6EGrppguJ7/view?usp=sharing",
+      title: "Fake News Detection",
+      description: "Built ML models using NLP embeddings and classifiers to detect fake vs. real news articles",
+      url: "https://github.com/AryanThodupunuri/fake-news-detection"
+    },
+    {
+      cover: "https://drive.google.com/file/d/1xk_9JpLFH_VwzltU0rtdJ_O4dP8Ks1gE/view?usp=sharing",
+      title: "Traffic Sign CNN",
+      description: "Trained a LeNet-5 CNN on the GTSRB dataset to classify 43 types of German traffic signs",
+      url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
+    },
+    {
+      cover: "https://drive.google.com/file/d/1kzBMoeV1rzbWkzsekDhyfp80hrAFzdom/view?usp=sharing",
+      title: "Stock Price Prediction – KNN",
+      description: "Explored KNN for stock trend classification and regression forecasting, with Quandl API data and feature engineering",
+      url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
+    },
+    {
+      cover: "https://drive.google.com/file/d/1OOp6HkV_6UFl6lp2CapoCF90ExwY6usv/view?usp=sharing",
       title: "Travel Packing Checklist",
       description: "HTML, CSS, JavaScript — generate packing list by trip type & duration",
       url: "https://github.com/AryanThodupunuri/travel-packing-checklist.github.io"
     },
     {
-      cover: "/portfolio/placeholder.png",
+      cover: "https://drive.google.com/file/d/1OOp6HkV_6UFl6lp2CapoCF90ExwY6usv/view?usp=sharing",
       title: "Travel Packing Checklist (Live)",
       description: "Live demo hosted on GitHub Pages",
       url: "https://aryanthodupunuri.github.io/travel-packing-checklist.github.io/"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
-      title: "SlackLite – Real-time Messaging System",
-      description: "FastAPI, React, MongoDB, WebSockets, JWT, uploads, reactions",
-      url: "https://github.com/AryanThodupunuri/SlackLite"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
-      title: "Fake News Detection",
-      description: "NLP embeddings + classifiers for fake vs. real news",
-      url: "https://github.com/AryanThodupunuri/fake-news-detection"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
-      title: "Taiwanese Bankruptcy Prediction",
-      description: "LogReg, RF, XGBoost, SVM with PCA/Lasso, class balancing",
-      url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
-      title: "Stock Price Prediction – KNN",
-      description: "Quandl data, classification + regression forecasting",
-      url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
-    },
-    {
-      cover: "/portfolio/placeholder.png",
-      title: "Traffic Sign CNN",
-      description: "LeNet-5 on GTSRB: classify 43 German traffic signs",
-      url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
     }
   ]
 };
@@ -86,7 +86,7 @@ const Portfolio = () => {
                                 <div className="content">
                                     <p className="title">{port.title}</p>
                                     <h4 className="description">{port.description}</h4>
-                                    <button className="btn" onClick={() => { if (port.url && port.url !== '#') window.open(port.url); }}>View</button>
+                                    <button className="btn" onClick={() => { if (port.url && port.url !== '#') window.open(port.url, '_blank'); }}>View</button>
                                 </div>
                             </div>
                         )
