@@ -30,7 +30,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
     },
     {
-      cover: "https://drive.google.com/file/d/1ZoqgfPMXn3aDyx-iolCs8e6EGrppguJ7/view?usp=sharing",
+      cover: "https://drive.google.com/uc?export=view&id=1ZoqgfPMXn3aDyx-iolCs8e6EGrppguJ7",
       title: "Fake News Detection",
       description: "Built ML models using NLP embeddings and classifiers to detect fake vs. real news articles",
       url: "https://github.com/AryanThodupunuri/fake-news-detection"
