@@ -6,7 +6,7 @@ import AnimatedLetters from "../AnimatedLetters";
 const portfolioData = {
   portfolio: [
     {
-      cover: "/portfolio/placeholder.png",
+      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/0whxvufh_cloud-kitchen-delivery-hero.webp",
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
