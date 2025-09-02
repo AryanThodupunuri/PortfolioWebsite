@@ -24,7 +24,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/SlackLite"
     },
     {
-      cover: "https://drive.google.com/uc?export=view&id=11ryUw0fEVpa2oG23xzHsnkh2FwQlK7aT",
+      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/ni4s5hy0_Blog-4-Title-Banner-1.jpg",
       title: "Taiwanese Bankruptcy Prediction",
       description: "Predicted bankruptcies using Logistic Regression, Random Forest, XGBoost, and SVM with PCA, Lasso, and class balancing",
       url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
