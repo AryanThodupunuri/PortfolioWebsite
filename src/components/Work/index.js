@@ -23,7 +23,7 @@ const Work = () => {
             <div className = "container work-page"> 
                 <div className = "text-zone"> 
                     <h1>
-                        <AnimatedLetters letterClass={letterClass}  strArray = {"Work Experience".split("")} idx={10}/>
+                        <AnimatedLetters letterClass={letterClass}  strArray = {"Experiences".split("")} idx={10}/>
                     </h1>
                     <Timeline />
                 </div>

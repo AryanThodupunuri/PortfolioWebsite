@@ -6,7 +6,7 @@ import AnimatedLetters from "../AnimatedLetters";
 const portfolioData = {
   portfolio: [
     {
-      cover: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdeonde.co%2Fcloud-kitchen-delivery-software-solution.shtml&psig=AOvVaw3ziDvAh26Co8J-8NXUaB-V&ust=1756857776658000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCIi5gLHjuI8DFQAAAAAdAAAAABAL",
+      cover: "/portfolio/placeholder.png",
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
       url: "#"
@@ -76,7 +76,7 @@ const Portfolio = () => {
                     portfolio.map((port, idx) => {
                         return (
                             <div key={idx} className="image-box">
-                                <img src={port.cover} alt="portfolio" className = "portfolio-image" onError={(e) => { e.currentTarget.src = '/portfolio/placeholder.png'; }} />
+                                <img src={port.cover} alt="portfolio" className = "portfolio-image" loading="lazy" onError={(e) => { e.currentTarget.src = '/portfolio/placeholder.png'; }} />
                                 <div className="content">
                                     <p className="title">{port.title}</p>
                                     <h4 className="description">{port.description}</h4>

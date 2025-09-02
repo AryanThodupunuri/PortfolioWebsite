@@ -24,6 +24,15 @@ const Timeline = () => {
       expanded: false,
     },
     {
+      date: 'May 2024',
+      title: 'Hack Week Participant — Palantir Technologies (Charlottesville, VA)',
+      description: [
+        'Developed backend logic for a <b>Flask</b>-based dashboard that analyzed <b>50,000+</b> simulated emergency dispatch records to detect underserved neighborhoods and analyze factors contributing to delayed response times in high-density urban zones.',
+        'Integrated <b>Leaflet.js</b> with clustering algorithms to visualize incident hotspots on an interactive map, helping optimize station placement and improve emergency coverage; presented insights to Palantir engineers during the final demo.',
+      ],
+      expanded: false,
+    },
+    {
       date: 'Apr 2024 – Aug 2024',
       title: 'Machine Learning & Backend Engineering Intern — UVA Link Lab',
       description: [
@@ -44,46 +53,67 @@ const Timeline = () => {
     },
   ]);
 
-  const handleItemClick = (index) => {
-    setEvents((prevEvents) => {
-      const updatedEvents = prevEvents.map((event, idx) => {
-        if (idx === index) {
-          return { ...event, expanded: !event.expanded };
-        }
-        return event;
-      });
-      return updatedEvents;
-    });
+  const [leadershipEvents, setLeadershipEvents] = useState([
+    {
+      date: 'Mar 2025 – Present',
+      title: 'AI Strategy Lead – RLM Marketing Optimization (Business & AI Club)',
+      description: [
+        'Collaborated on a cross-functional team to design an <b>AI-powered</b> marketing insights tool, leading development of campaign analytics and strategic recommendations that improved decision-making speed and team alignment across the market organization.',
+      ],
+      expanded: false,
+    },
+    {
+      date: 'Aug 2024 – Present',
+      title: 'VP of Academic Excellence',
+      description: [
+        'Launched an academic mentorship program pairing new members with upperclassmen, increasing study session participation and contributing to a <b>+0.15</b> average GPA improvement across first-semester members.',
+      ],
+      expanded: false,
+    },
+  ]);
+
+  const handleItemClick = (index, type = 'exp') => {
+    if (type === 'exp') {
+      setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
+    } else {
+      setLeadershipEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
+    }
   };
+
+  const renderItems = (items, type) => (
+    items.map((event, index) => (
+      <div
+        className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
+        key={`${type}-${index}`}
+        onClick={() => handleItemClick(index, type)}
+      >
+        <div className="timeline-marker"></div>
+        <div className="timeline-content">
+          <h2>{event.title}</h2>
+          {event.expanded ? (
+            <div>
+              {event.description.map((desc, descIndex) => (
+                <p key={descIndex} dangerouslySetInnerHTML={{ __html: desc }} />
+              ))}
+            </div>
+          ) : (
+            <>
+              <div className="more">
+                <p>Click for more</p>
+              </div>
+              <div className="date">{event.date}</div>
+            </>
+          )}
+        </div>
+      </div>
+    ))
+  );
 
   return (
     <div className="timeline-container">
-      {events.map((event, index) => (
-        <div
-          className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
-          key={index}
-          onClick={() => handleItemClick(index)}
-        >
-          <div className="timeline-marker"></div>
-          <div className="timeline-content">
-            <h2>{event.title}</h2>
-            {event.expanded ? (
-              <div>
-                {event.description.map((desc, descIndex) => (
-                  <p key={descIndex} dangerouslySetInnerHTML={{ __html: desc }} />
-                ))}
-              </div>
-            ) : (
-              <>
-                <div className="more">
-                  <p>Click for more</p>
-                </div>
-                <div className="date">{event.date}</div>
-              </>
-            )}
-          </div>
-        </div>
-      ))}
+      {renderItems(events, 'exp')}
+      <h2 className="subsection">Leadership</h2>
+      {renderItems(leadershipEvents, 'lead')}
     </div>
   );
 };
