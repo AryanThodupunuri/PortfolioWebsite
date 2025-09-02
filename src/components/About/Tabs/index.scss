@@ -1,0 +1,26 @@
+.about-tabs {
+  display: inline-flex;
+  gap: 10px;
+  margin: 10px 0 20px;
+}
+
+.about-tabs .tab {
+  padding: 8px 14px;
+  border: 2px solid #ffd700;
+  border-radius: 6px;
+  color: #ffd700;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.about-tabs .tab:hover {
+  background: #ffd700;
+  color: #333;
+}
+
+.about-tabs .tab.active {
+  background: #ffd700;
+  color: #333;
+}
