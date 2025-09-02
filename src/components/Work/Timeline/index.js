@@ -62,24 +62,7 @@ const Timeline = () => {
     },
   ]);
 
-  const [leadershipEvents, setLeadershipEvents] = useState([
-    {
-      date: 'Mar 2025 – Present',
-      title: 'AI Strategy Lead – RLM Marketing Optimization (Business & AI Club)',
-      description: [
-        'Collaborated on a cross-functional team to design an <b>AI-powered</b> marketing insights tool, leading development of campaign analytics and strategic recommendations that improved decision-making speed and team alignment across the market organization.',
-      ],
-      expanded: false,
-    },
-    {
-      date: 'Aug 2024 – Present',
-      title: 'VP of Academic Excellence',
-      description: [
-        'Launched an academic mentorship program pairing new members with upperclassmen, increasing study session participation and contributing to a <b>+0.15</b> average GPA improvement across first-semester members.',
-      ],
-      expanded: false,
-    },
-  ]);
+
 
   const handleItemClick = (index, type = 'exp') => {
     if (type === 'exp') {
