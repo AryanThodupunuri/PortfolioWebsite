@@ -36,7 +36,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/fake-news-detection"
     },
     {
-      cover: "https://drive.google.com/uc?export=view&id=1xk_9JpLFH_VwzltU0rtdJ_O4dP8Ks1gE",
+      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/d0gg9b3i_dataset-card.png",
       title: "Traffic Sign CNN",
       description: "Trained a LeNet-5 CNN on the GTSRB dataset to classify 43 types of German traffic signs",
       url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
