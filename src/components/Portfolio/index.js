@@ -27,7 +27,7 @@ const portfolioData = {
       cover: "https://drive.google.com/file/d/11ryUw0fEVpa2oG23xzHsnkh2FwQlK7aT/view?usp=sharing",
       title: "Taiwanese Bankruptcy Prediction",
       description: "Predicted bankruptcies using Logistic Regression, Random Forest, XGBoost, and SVM with PCA, Lasso, and class balancing",
-      url: "https://github.com/AryanThodupunur i/taiwan-bankruptcy-prediction"
+      url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
     },
     {
       cover: "https://drive.google.com/file/d/1ZoqgfPMXn3aDyx-iolCs8e6EGrppguJ7/view?usp=sharing",
