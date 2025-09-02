@@ -48,7 +48,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
     },
     {
-      cover: "https://drive.google.com/uc?export=view&id=1OOp6HkV_6UFl6lp2CapoCF90ExwY6usv",
+      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/8xzxs8rb_1_7XdsUAH4aCs_xiF6NEXLsA.png",
       title: "Travel Packing Checklist",
       description: "HTML, CSS, JavaScript — generate packing list by trip type & duration",
       url: "https://github.com/AryanThodupunuri/travel-packing-checklist.github.io"
