@@ -12,7 +12,7 @@ const portfolioData = {
       url: "#"
     },
     {
-      cover: "https://drive.google.com/file/d/1gzviEMZzSS2lBbcZoDbKYSxfl6bbT3Lf/view?usp=drive_link",
+      cover: "https://drive.google.com/uc?export=view&id=1gzviEMZzSS2lBbcZoDbKYSxfl6bbT3Lf",
       title: "UVA Course Planner Platform",
       description: "React, Python, AWS S3",
       url: "#"
