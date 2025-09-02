@@ -54,7 +54,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/travel-packing-checklist.github.io"
     },
     {
-      cover: "https://drive.google.com/file/d/1OOp6HkV_6UFl6lp2CapoCF90ExwY6usv/view?usp=sharing",
+      cover: "https://drive.google.com/uc?export=view&id=1OOp6HkV_6UFl6lp2CapoCF90ExwY6usv",
       title: "Travel Packing Checklist (Live)",
       description: "Live demo hosted on GitHub Pages",
       url: "https://aryanthodupunuri.github.io/travel-packing-checklist.github.io/"
