@@ -68,12 +68,12 @@ const Timeline = () => {
     setEvents((prev) => prev.map((e, i) => (i === index ? { ...e, expanded: !e.expanded } : e)));
   };
 
-  const renderItems = (items, type) => (
+  const renderItems = (items) => (
     items.map((event, index) => (
       <div
         className={`timeline-item ${event.expanded ? 'expanded' : ''}`}
-        key={`${type}-${index}`}
-        onClick={() => handleItemClick(index, type)}
+        key={index}
+        onClick={() => handleItemClick(index)}
       >
         <div className="timeline-marker"></div>
         <div className="timeline-content">
