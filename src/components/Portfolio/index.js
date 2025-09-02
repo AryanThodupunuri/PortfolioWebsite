@@ -42,7 +42,7 @@ const portfolioData = {
       url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
     },
     {
-      cover: "https://drive.google.com/file/d/1kzBMoeV1rzbWkzsekDhyfp80hrAFzdom/view?usp=sharing",
+      cover: "https://drive.google.com/uc?export=view&id=1kzBMoeV1rzbWkzsekDhyfp80hrAFzdom",
       title: "Stock Price Prediction – KNN",
       description: "Explored KNN for stock trend classification and regression forecasting, with Quandl API data and feature engineering",
       url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
