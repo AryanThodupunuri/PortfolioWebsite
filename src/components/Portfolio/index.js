@@ -18,7 +18,7 @@ const portfolioData = {
       url: "#"
     },
     {
-      cover: "https://drive.google.com/file/d/1no_n7tWG2JlfG835gL7QAW1LFqjoqQK0/view?usp=sharing",
+      cover: "https://drive.google.com/uc?export=view&id=1no_n7tWG2JlfG835gL7QAW1LFqjoqQK0",
       title: "SlackLite – Real-time Messaging System",
       description: "Modern messaging app with FastAPI, React, MongoDB, WebSockets, JWT, file uploads, reactions, editing",
       url: "https://github.com/AryanThodupunuri/SlackLite"
