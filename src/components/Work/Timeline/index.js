@@ -99,9 +99,7 @@ const Timeline = () => {
 
   return (
     <div className="timeline-container">
-      {renderItems(events, 'exp')}
-      <h2 className="subsection">Leadership</h2>
-      {renderItems(leadershipEvents, 'lead')}
+      {renderItems(events)}
     </div>
   );
 };
