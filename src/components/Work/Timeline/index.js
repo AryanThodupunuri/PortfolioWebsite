@@ -20,6 +20,7 @@ const Timeline = () => {
         'Automated <b>ETL</b> pipelines in <b>Python</b> and <b>SQL</b> to aggregate Spotify, Apple Music, and Ticketmaster datasets.',
         'Optimized API performance and caching, reducing query latency by <b>35%</b> during peak fan traffic.',
         'Containerized backend services with <b>Docker</b> on <b>AWS</b>, improving reliability and simplifying cloud deployment.',
+        'Designed data models and interactive dashboards to surface KPIs like artist demand, event trends, and cross-platform engagement.'
       ],
       expanded: false,
     },
@@ -64,7 +65,7 @@ const Timeline = () => {
     },
     {
       date: 'Aug 2024 – Present',
-      title: 'VP of Academic Excellence',
+      title: 'VP of Academic Excellence - Delta Upsilon',
       description: [
         'Launched an academic mentorship program pairing new members with upperclassmen, resulting in increased study session participation and contributing to a <b>+0.15</b> average GPA improvement across first-semester members.',
       ],
