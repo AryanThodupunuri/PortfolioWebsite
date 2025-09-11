@@ -8,7 +8,7 @@ import './index.scss';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = "Aryan Thodupunuri".split("");
-    const jobArray = "software engineer and business problem solver.".split("");
+    const jobArray = "software engineer.".split("");
 
     useEffect(() => {
         const timerId = setTimeout(() => {
