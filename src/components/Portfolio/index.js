@@ -9,13 +9,13 @@ const portfolioData = {
       cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/0whxvufh_cloud-kitchen-delivery-hero.webp",
       title: "Cloud-Native Food Ordering System",
       description: "Java, Spring Boot, Kafka, Docker, AWS",
-      url: "#"
+      url: "https://github.com/AryanThodupunuri/food-ordering-system"
     },
     {
       cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/nxugjr3g_Screenshot%202025-09-01%20at%208.04.19%E2%80%AFPM.png",
       title: "UVA Course Planner Platform",
       description: "React, Python, AWS S3",
-      url: "#"
+      url: "https://github.com/AryanThodupunuri/course-picker"
     },
     {
       cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/9b7sjxso_512x512bb.jpg",
