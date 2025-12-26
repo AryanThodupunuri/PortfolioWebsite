@@ -2,59 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "react-loaders";
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
-
-const portfolioData = {
-  portfolio: [
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/0whxvufh_cloud-kitchen-delivery-hero.webp",
-      title: "Cloud-Native Food Ordering System",
-      description: "Java, Spring Boot, Kafka, Docker, AWS",
-      url: "https://github.com/AryanThodupunuri/food-ordering-system"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/nxugjr3g_Screenshot%202025-09-01%20at%208.04.19%E2%80%AFPM.png",
-      title: "UVA Course Planner Platform",
-      description: "React, Python, AWS S3",
-      url: "https://github.com/AryanThodupunuri/course-picker"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/9b7sjxso_512x512bb.jpg",
-      title: "SlackLite – Real-time Messaging System",
-      description: "Modern messaging app with FastAPI, React, MongoDB, WebSockets, JWT, file uploads, reactions, editing",
-      url: "https://github.com/AryanThodupunuri/SlackLite"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/ni4s5hy0_Blog-4-Title-Banner-1.jpg",
-      title: "Taiwanese Bankruptcy Prediction",
-      description: "Predicted bankruptcies using Logistic Regression, Random Forest, XGBoost, and SVM with PCA, Lasso, and class balancing",
-      url: "https://github.com/AryanThodupunuri/taiwan-bankruptcy-prediction"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/up31u5ul_fake-news-detector-960.jpg",
-      title: "Fake News Detection",
-      description: "Built ML models using NLP embeddings and classifiers to detect fake vs. real news articles",
-      url: "https://github.com/AryanThodupunuri/fake-news-detection"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/d0gg9b3i_dataset-card.png",
-      title: "Traffic Sign CNN",
-      description: "Trained a LeNet-5 CNN on the GTSRB dataset to classify 43 types of German traffic signs",
-      url: "https://github.com/AryanThodupunuri/Traffic-Sign-CNN"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/czhfsgoe_download%20%285%29.jpeg",
-      title: "Stock Price Prediction – KNN",
-      description: "Explored KNN for stock trend classification and regression forecasting, with Quandl API data and feature engineering",
-      url: "https://github.com/AryanThodupunuri/StockPricePrediction-KNN"
-    },
-    {
-      cover: "https://customer-assets.emergentagent.com/job_resume-clone-2/artifacts/8xzxs8rb_1_7XdsUAH4aCs_xiF6NEXLsA.png",
-      title: "Travel Packing Checklist",
-      description: "HTML, CSS, JavaScript — generate packing list by trip type & duration",
-      url: "https://github.com/AryanThodupunuri/travel-packing-checklist.github.io"
-    }
-  ]
-};
+import portfolioData from "../../data/portfolio.json";
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
