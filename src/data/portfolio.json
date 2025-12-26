@@ -25,6 +25,24 @@
             "url": "https://premierzone.vercel.app/"
         },
         {
+            "cover": "/portfolio/AWSLandingZone.png", 
+            "title": "AWS Landing Zone", 
+            "description": "Terraform, AWS, Infrastructure as Code", 
+            "url": "https://github.com/AryanThodupunuri/aws-landing-zone"
+        },
+        {
+            "cover": "/portfolio/PersonalDataVault.png", 
+            "title": "Personal Data Vault", 
+            "description": "FastAPI, React, MongoDB, OAuth2", 
+            "url": "https://github.com/AryanThodupunuri/personal-data-vault"
+        },
+        {
+            "cover": "/portfolio/WeatherClassification.png", 
+            "title": "Extreme Weather Classification", 
+            "description": "PyTorch, CNNs, Transfer Learning", 
+            "url": "https://github.com/AryanThodupunuri/extreme-weather-classification"
+        },
+        {
             "cover": "/portfolio/JwtImage.png", 
             "title": "Spring Security Tutorial", 
             "description": "Spring Boot, JWT", 
